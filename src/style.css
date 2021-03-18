@@ -99,7 +99,7 @@ ul {
 }
 
 .slide {
-    height: calc(100vh - 7.75rem);
+    height: calc(auto - 7.75rem);
     position: relative;
 }
 
@@ -216,5 +216,54 @@ ul {
 
 .btn--institutional:hover {
     color: var(--color-copy);
+    background: unset;
+}
+
+.quote {
+    background-image: url(./images/parallax.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quote__container {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+    min-height: 80vh;
+}
+
+.quote__copy {
+    background-color: #fff;
+    padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+    font-weight: 400;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1875rem;
+    line-height: 1.4375rem;
+    max-width: 53ch;
+    margin:0;
+}
+
+.quote__copy h2 {
+    text-transform: uppercase;
+    line-height: 5rem;
+    font-size: 5rem;
+    letter-spacing: -0.1875rem;
+    font-weight: 700;
+    margin: 1.875rem 0;
+}
+
+.quote__copy h2 span {
+    display: grid;
+}
+
+.btn--quote {
+    color: var(--color-copy);
+    border-color: var(--color-copy);
     background: unset;
 }
